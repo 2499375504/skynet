@@ -19,6 +19,7 @@ end
 
 function tableframe:onTimer()
     -- skynet.error("onTimer")
+    
 end
 
 function tableframe:OnGameStart()
