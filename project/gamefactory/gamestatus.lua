@@ -1,0 +1,18 @@
+local STATUS = {}
+
+STATUS.GAME_STATUS = {
+    WAIT_USERINFO = 1,
+    WAIT_DESK = 2,
+    WAIT_DESK_SURE = 3,
+    LOOK_ON = 4,
+    WAIT_READY = 5,
+    WAIT_START = 6,
+    WAIT_END = 7,
+}
+
+STATUS.TABLE_STATUS = {
+    WAIT_START = 1,
+    WAIT_END = 2,
+}
+
+return STATUS
