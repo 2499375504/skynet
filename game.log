@@ -1,0 +1,453 @@
+24/03/22 17:08:41.71 [:00000002] LAUNCH snlua bootstrap
+24/03/22 17:08:41.71 [:00000003] LAUNCH snlua launcher
+24/03/22 17:08:41.71 [:00000004] LAUNCH snlua cdummy
+24/03/22 17:08:41.71 [:00000005] LAUNCH harbor 0 4
+24/03/22 17:08:41.71 [:00000006] LAUNCH snlua datacenterd
+24/03/22 17:08:41.71 [:00000007] LAUNCH snlua service_mgr
+24/03/22 17:08:41.71 [:00000008] LAUNCH snlua main_wgame
+24/03/22 17:08:41.71 [:00000008] Server start
+24/03/22 17:08:41.71 [:00000009] LAUNCH snlua protoloader
+24/03/22 17:08:41.71 [:0000000a] LAUNCH snlua debug_console 8000
+24/03/22 17:08:41.73 [:0000000a] Start debug console at 127.0.0.1:8000
+24/03/22 17:08:41.73 [:0000000b] LAUNCH snlua loginservice loginservice 1
+24/03/22 17:08:41.73 [:0000000c] LAUNCH snlua clusterd
+24/03/22 17:08:41.73 [:0000000b] login server init...
+24/03/22 17:08:41.73 [:0000000d] LAUNCH snlua gameservice gameservice 1
+24/03/22 17:08:41.73 [:0000000e] LAUNCH snlua gamewebsocket
+24/03/22 17:08:41.73 [:0000000f] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000010] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000011] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000012] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000013] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000014] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000015] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.73 [:00000016] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000017] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000018] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000019] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001a] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001b] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001c] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001d] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001e] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000001f] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000020] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000021] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:00000022] LAUNCH snlua wagent wagent 1
+24/03/22 17:08:41.74 [:0000000e] Listen websocket port 0.0.0.0:8001 protocol:ws
+24/03/22 17:08:41.74 [:00000008] KILL self
+24/03/22 17:08:41.74 [:00000002] KILL self
+24/03/22 17:09:35.80 [:00000002] LAUNCH snlua bootstrap
+24/03/22 17:09:35.80 [:00000003] LAUNCH snlua launcher
+24/03/22 17:09:35.80 [:00000004] LAUNCH snlua cdummy
+24/03/22 17:09:35.81 [:00000005] LAUNCH harbor 0 4
+24/03/22 17:09:35.81 [:00000006] LAUNCH snlua datacenterd
+24/03/22 17:09:35.81 [:00000007] LAUNCH snlua service_mgr
+24/03/22 17:09:35.81 [:00000008] LAUNCH snlua main_wgame
+24/03/22 17:09:35.81 [:00000008] Server start
+24/03/22 17:09:35.81 [:00000009] LAUNCH snlua protoloader
+24/03/22 17:09:35.82 [:0000000a] LAUNCH snlua debug_console 8000
+24/03/22 17:09:35.82 [:0000000a] Start debug console at 127.0.0.1:8000
+24/03/22 17:09:35.82 [:0000000b] LAUNCH snlua loginservice loginservice 1
+24/03/22 17:09:35.82 [:0000000b] name: loginservice
+24/03/22 17:09:35.82 [:0000000c] LAUNCH snlua clusterd
+24/03/22 17:09:35.82 [:0000000b] login server init...
+24/03/22 17:09:35.82 [:0000000d] LAUNCH snlua gameservice gameservice 1
+24/03/22 17:09:35.82 [:0000000d] name: gameservice
+24/03/22 17:09:35.82 [:0000000e] LAUNCH snlua gamewebsocket
+24/03/22 17:09:35.82 [:0000000f] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:0000000f] name: wagent
+24/03/22 17:09:35.82 [:00000010] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000010] name: wagent
+24/03/22 17:09:35.82 [:00000011] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000011] name: wagent
+24/03/22 17:09:35.82 [:00000012] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000012] name: wagent
+24/03/22 17:09:35.82 [:00000013] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000013] name: wagent
+24/03/22 17:09:35.82 [:00000014] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000014] name: wagent
+24/03/22 17:09:35.82 [:00000015] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000015] name: wagent
+24/03/22 17:09:35.82 [:00000016] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000016] name: wagent
+24/03/22 17:09:35.82 [:00000017] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000017] name: wagent
+24/03/22 17:09:35.82 [:00000018] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000018] name: wagent
+24/03/22 17:09:35.82 [:00000019] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:00000019] name: wagent
+24/03/22 17:09:35.82 [:0000001a] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:0000001a] name: wagent
+24/03/22 17:09:35.82 [:0000001b] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:0000001b] name: wagent
+24/03/22 17:09:35.82 [:0000001c] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.82 [:0000001c] name: wagent
+24/03/22 17:09:35.83 [:0000001d] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:0000001d] name: wagent
+24/03/22 17:09:35.83 [:0000001e] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:0000001e] name: wagent
+24/03/22 17:09:35.83 [:0000001f] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:0000001f] name: wagent
+24/03/22 17:09:35.83 [:00000020] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:00000020] name: wagent
+24/03/22 17:09:35.83 [:00000021] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:00000021] name: wagent
+24/03/22 17:09:35.83 [:00000022] LAUNCH snlua wagent wagent 1
+24/03/22 17:09:35.83 [:00000022] name: wagent
+24/03/22 17:09:35.83 [:0000000e] Listen websocket port 0.0.0.0:8001 protocol:ws
+24/03/22 17:09:35.84 [:00000008] KILL self
+24/03/22 17:09:35.84 [:00000002] KILL self
+24/03/22 17:09:46.05 [:0000000e] accept client socket_id: 3 addr:183.192.22.57:1266
+24/03/22 17:09:46.05 [:0000000f] ws connect from: 3
+24/03/22 17:09:46.06 [:0000000f] ws handshake from: 3 url / addr: 183.192.22.57:1266
+24/03/22 17:09:46.06 [:0000000f] ----header-----
+24/03/22 17:09:46.06 [:0000000f] user-agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36
+24/03/22 17:09:46.06 [:0000000f] pragma no-cache
+24/03/22 17:09:46.06 [:0000000f] origin http://1.15.32.181:9090
+24/03/22 17:09:46.06 [:0000000f] cache-control no-cache
+24/03/22 17:09:46.06 [:0000000f] accept-language zh-CN,zh;q=0.9
+24/03/22 17:09:46.06 [:0000000f] sec-websocket-key XzGvuvNqKVMOJNHUTr8Z6g==
+24/03/22 17:09:46.06 [:0000000f] connection Upgrade
+24/03/22 17:09:46.06 [:0000000f] sec-websocket-extensions permessage-deflate; client_max_window_bits
+24/03/22 17:09:46.06 [:0000000f] upgrade websocket
+24/03/22 17:09:46.06 [:0000000f] sec-websocket-version 13
+24/03/22 17:09:46.06 [:0000000f] accept-encoding gzip, deflate
+24/03/22 17:09:46.06 [:0000000f] host 1.15.32.181:8001
+24/03/22 17:09:46.06 [:0000000f] --------------
+24/03/22 17:09:52.02 [:0000000f] message: text {"_cmd":"login","userid":"1","password":"2"}
+24/03/22 17:09:52.02 [:0000000b] LoginReq: 1 2
+24/03/22 17:09:52.02 [:0000000d] ./project/gamefactory/playerstableMgr.lua:26: attempt to index a nil value (global 'skynet')
+24/03/22 17:09:52.02 [:0000000d] stack traceback:
+	./project/gamefactory/service.lua:15: in metamethod 'index'
+	./project/gamefactory/playerstableMgr.lua:26: in function 'playerstableMgr.addPlayer'
+	./project/gamefactory/gameservice.lua:140: in function 'service.onEnter'
+	(...tail calls...)
+	[C]: in function 'xpcall'
+	./project/gamefactory/service.lua:28: in upvalue 'f'
+	./lualib/skynet.lua:280: in function <./lualib/skynet.lua:252>
+24/03/22 17:09:53.86 [:0000000f] message: text {"_cmd":"login","userid":"1","password":"2"}
+24/03/22 17:09:53.86 [:0000000f] ws close from: 3 nil nil
+24/03/22 17:10:08.72 [:00000002] LAUNCH snlua bootstrap
+24/03/22 17:10:08.72 [:00000003] LAUNCH snlua launcher
+24/03/22 17:10:08.72 [:00000004] LAUNCH snlua cdummy
+24/03/22 17:10:08.72 [:00000005] LAUNCH harbor 0 4
+24/03/22 17:10:08.72 [:00000006] LAUNCH snlua datacenterd
+24/03/22 17:10:08.72 [:00000007] LAUNCH snlua service_mgr
+24/03/22 17:10:08.73 [:00000008] LAUNCH snlua main_wgame
+24/03/22 17:10:08.73 [:00000008] Server start
+24/03/22 17:10:08.73 [:00000009] LAUNCH snlua protoloader
+24/03/22 17:10:08.73 [:0000000a] LAUNCH snlua console
+24/03/22 17:10:08.73 [:0000000b] LAUNCH snlua debug_console 8000
+24/03/22 17:10:08.73 [:0000000b] Start debug console at 127.0.0.1:8000
+24/03/22 17:10:08.73 [:0000000c] LAUNCH snlua loginservice loginservice 1
+24/03/22 17:10:08.73 [:0000000c] name: loginservice
+24/03/22 17:10:08.73 [:0000000d] LAUNCH snlua clusterd
+24/03/22 17:10:08.73 [:0000000c] login server init...
+24/03/22 17:10:08.74 [:0000000e] LAUNCH snlua gameservice gameservice 1
+24/03/22 17:10:08.74 [:0000000e] name: gameservice
+24/03/22 17:10:08.74 [:0000000f] LAUNCH snlua gamewebsocket
+24/03/22 17:10:08.74 [:00000010] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000010] name: wagent
+24/03/22 17:10:08.74 [:00000011] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000011] name: wagent
+24/03/22 17:10:08.74 [:00000012] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000012] name: wagent
+24/03/22 17:10:08.74 [:00000013] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000013] name: wagent
+24/03/22 17:10:08.74 [:00000014] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000014] name: wagent
+24/03/22 17:10:08.74 [:00000015] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000015] name: wagent
+24/03/22 17:10:08.74 [:00000016] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000016] name: wagent
+24/03/22 17:10:08.74 [:00000017] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000017] name: wagent
+24/03/22 17:10:08.74 [:00000018] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000018] name: wagent
+24/03/22 17:10:08.74 [:00000019] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:00000019] name: wagent
+24/03/22 17:10:08.74 [:0000001a] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001a] name: wagent
+24/03/22 17:10:08.74 [:0000001b] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001b] name: wagent
+24/03/22 17:10:08.74 [:0000001c] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001c] name: wagent
+24/03/22 17:10:08.74 [:0000001d] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001d] name: wagent
+24/03/22 17:10:08.74 [:0000001e] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001e] name: wagent
+24/03/22 17:10:08.74 [:0000001f] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.74 [:0000001f] name: wagent
+24/03/22 17:10:08.74 [:00000020] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.75 [:00000020] name: wagent
+24/03/22 17:10:08.75 [:00000021] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.75 [:00000021] name: wagent
+24/03/22 17:10:08.75 [:00000022] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.75 [:00000022] name: wagent
+24/03/22 17:10:08.75 [:00000023] LAUNCH snlua wagent wagent 1
+24/03/22 17:10:08.75 [:00000023] name: wagent
+24/03/22 17:10:08.75 [:0000000f] Listen websocket port 0.0.0.0:8001 protocol:ws
+24/03/22 17:10:08.76 [:00000008] KILL self
+24/03/22 17:10:08.76 [:00000002] KILL self
+24/03/22 18:25:31.83 [:00000002] LAUNCH snlua bootstrap
+24/03/22 18:25:31.83 [:00000003] LAUNCH snlua launcher
+24/03/22 18:25:31.83 [:00000004] LAUNCH snlua cdummy
+24/03/22 18:25:31.83 [:00000005] LAUNCH harbor 0 4
+24/03/22 18:25:31.83 [:00000006] LAUNCH snlua datacenterd
+24/03/22 18:25:31.83 [:00000007] LAUNCH snlua service_mgr
+24/03/22 18:25:31.83 [:00000008] LAUNCH snlua main_wgame
+24/03/22 18:25:31.84 [:00000008] Server start
+24/03/22 18:25:31.84 [:00000009] LAUNCH snlua protoloader
+24/03/22 18:25:31.84 [:0000000a] LAUNCH snlua debug_console 8000
+24/03/22 18:25:31.84 [:0000000a] Start debug console at 127.0.0.1:8000
+24/03/22 18:25:31.85 [:0000000b] LAUNCH snlua loginservice loginservice 1
+24/03/22 18:25:31.85 [:0000000b] name: loginservice
+24/03/22 18:25:31.85 [:0000000c] LAUNCH snlua clusterd
+24/03/22 18:25:31.85 [:0000000b] login server init...
+24/03/22 18:25:31.85 [:0000000d] LAUNCH snlua gameservice gameservice 1
+24/03/22 18:25:31.85 [:0000000d] name: gameservice
+24/03/22 18:25:31.85 [:0000000e] LAUNCH snlua gamewebsocket
+24/03/22 18:25:31.85 [:0000000f] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:0000000f] name: wagent
+24/03/22 18:25:31.85 [:00000010] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000010] name: wagent
+24/03/22 18:25:31.85 [:00000011] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000011] name: wagent
+24/03/22 18:25:31.85 [:00000012] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000012] name: wagent
+24/03/22 18:25:31.85 [:00000013] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000013] name: wagent
+24/03/22 18:25:31.85 [:00000014] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000014] name: wagent
+24/03/22 18:25:31.85 [:00000015] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000015] name: wagent
+24/03/22 18:25:31.85 [:00000016] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000016] name: wagent
+24/03/22 18:25:31.85 [:00000017] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.85 [:00000017] name: wagent
+24/03/22 18:25:31.86 [:00000018] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:00000018] name: wagent
+24/03/22 18:25:31.86 [:00000019] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:00000019] name: wagent
+24/03/22 18:25:31.86 [:0000001a] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001a] name: wagent
+24/03/22 18:25:31.86 [:0000001b] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001b] name: wagent
+24/03/22 18:25:31.86 [:0000001c] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001c] name: wagent
+24/03/22 18:25:31.86 [:0000001d] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001d] name: wagent
+24/03/22 18:25:31.86 [:0000001e] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001e] name: wagent
+24/03/22 18:25:31.86 [:0000001f] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:0000001f] name: wagent
+24/03/22 18:25:31.86 [:00000020] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:00000020] name: wagent
+24/03/22 18:25:31.86 [:00000021] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:00000021] name: wagent
+24/03/22 18:25:31.86 [:00000022] LAUNCH snlua wagent wagent 1
+24/03/22 18:25:31.86 [:00000022] name: wagent
+24/03/22 18:25:31.86 [:0000000e] Listen websocket port 0.0.0.0:8001 protocol:ws
+24/03/22 18:25:31.87 [:00000008] KILL self
+24/03/22 18:25:31.87 [:00000002] KILL self
+24/03/22 18:25:49.32 [:0000000e] accept client socket_id: 3 addr:183.192.22.57:1093
+24/03/22 18:25:49.32 [:0000000f] ws connect from: 3
+24/03/22 18:25:49.32 [:0000000f] ws handshake from: 3 url / addr: 183.192.22.57:1093
+24/03/22 18:25:49.32 [:0000000f] ----header-----
+24/03/22 18:25:49.32 [:0000000f] upgrade websocket
+24/03/22 18:25:49.32 [:0000000f] connection Upgrade
+24/03/22 18:25:49.32 [:0000000f] accept-encoding gzip, deflate
+24/03/22 18:25:49.32 [:0000000f] host 1.15.32.181:8001
+24/03/22 18:25:49.32 [:0000000f] origin http://1.15.32.181:9090
+24/03/22 18:25:49.32 [:0000000f] sec-websocket-version 13
+24/03/22 18:25:49.32 [:0000000f] accept-language zh-CN,zh;q=0.9
+24/03/22 18:25:49.32 [:0000000f] sec-websocket-extensions permessage-deflate; client_max_window_bits
+24/03/22 18:25:49.32 [:0000000f] sec-websocket-key XSJRRrV5kps/W8AvyeqdCQ==
+24/03/22 18:25:49.32 [:0000000f] cache-control no-cache
+24/03/22 18:25:49.32 [:0000000f] user-agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36
+24/03/22 18:25:49.32 [:0000000f] pragma no-cache
+24/03/22 18:25:49.32 [:0000000f] --------------
+24/03/22 18:25:55.30 [:0000000f] message: text {"_cmd":"login","userid":"1","password":"3"}
+24/03/22 18:25:55.30 [:0000000b] LoginReq: 1 3
+24/03/22 18:25:55.30 [:0000000d] addPlayer: 1
+24/03/22 18:25:55.30 [:0000000d] gameservice.onEnter: 1 1
+24/03/22 18:25:55.30 [:0000000d] gameservice.sendData: 15 3 login table: 0x7f7e8600c040
+24/03/22 18:25:55.30 [:0000000f] send_data 3 login table: 0x7f7e8600c0c0
+24/03/22 18:25:56.68 [:0000000f] message: text {"_cmd":"sitdown"}
+24/03/22 18:25:56.68 [:0000000d] gameservice.resp.HandleSitDownReq
+24/03/22 18:25:56.68 [:0000000d] createTable: table: 0x7f7e83403100
+24/03/22 18:25:56.68 [:00000023] LAUNCH snlua tableservice tableservice 1
+24/03/22 18:25:56.68 [:00000023] tableframe:ctor: table: 0x7f7e834ad840 table: 0x7f7e83495600
+24/03/22 18:25:56.68 [:00000023] tablelogic.ctor
+24/03/22 18:25:56.68 [:00000023] name: tableservice
+24/03/22 18:25:56.68 [:00000023] tablelogic initLogic: table: 0x7f7e834ad840
+24/03/22 18:25:56.68 [:00000023] factotoryPlayerNode:ctor
+24/03/22 18:25:56.68 [:00000023] playernode:ctor
+24/03/22 18:25:56.68 [:00000023] factotoryPlayerNode:ctor
+24/03/22 18:25:56.68 [:00000023] playernode:ctor
+24/03/22 18:25:56.68 [:00000023] factotoryPlayerNode:ctor
+24/03/22 18:25:56.68 [:00000023] playernode:ctor
+24/03/22 18:25:56.68 [:00000023] factotoryPlayerNode:ctor
+24/03/22 18:25:56.68 [:00000023] playernode:ctor
+24/03/22 18:25:56.68 [:00000023] s.resp.HandleSitDownReq
+24/03/22 18:25:56.68 [:00000023] tablelogic.resp.HandleSitDownReq table: 0x7f7e834ad840
+24/03/22 18:25:56.68 [:00000023] playernode:Initialize
+24/03/22 18:25:56.68 [:00000023] tablelogic.CallBackSitDownSuccess: table: 0x7f7e834ad840 5
+24/03/22 18:25:56.68 [:0000000f] send_data 3 sitdown table: 0x7f7e834ad780
+24/03/22 18:25:57.25 [:0000000f] message: text {"_cmd":"ready"}
+24/03/22 18:25:57.25 [:0000000f] message: 1 3 35
+24/03/22 18:25:57.25 [:00000023] s.resp.HandleReadyReq
+24/03/22 18:25:57.25 [:00000023] tablelogic.HandleReadyReq: table: 0x7f7e834ad840 5
+24/03/22 18:25:57.25 [:00000023] tableframe:CallBackReadSuccess
+24/03/22 18:25:57.25 [:0000000f] send_data 3 ready table: 0x7f7e834af580
+24/03/22 18:25:57.25 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:25:57.25 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:25:57.25 [:0000000f] send_data 3 GameStart nil
+24/03/22 18:26:01.64 [:0000000f] ws close from: 3 nil nil
+24/03/22 18:26:01.64 [:0000000f] onClose fd: 3
+24/03/22 18:26:01.64 [:0000000d] disconnect: 15 15 1
+24/03/22 18:26:01.64 [:00000023] Disconnect: userdata: 0x7f7e8d614f90
+24/03/22 18:26:01.64 [:00000023] tablelogic:Disconnect userdata: 0x7f7e8d614f90
+24/03/22 18:26:01.64 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 7
+24/03/22 18:26:47.25 [:00000023] tablelogic:GameEnd
+24/03/22 18:26:47.25 [:00000023] tablelogic:PlayerLeave: 1
+24/03/22 18:26:47.25 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 5
+24/03/22 18:26:47.25 [:00000023] playernode:Reset
+24/03/22 18:26:47.25 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:26:47.25 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:26:47.25 [:0000000d] getPlayerByUserId: 1
+24/03/22 18:26:47.25 [:0000000d] removePlayer: 1 0 0
+24/03/22 18:26:47.25 [:0000000d] gameservice.resp.subplayer1: 1
+24/03/22 18:26:47.25 [:0000000d] gameservice.resp.subplayer2: 1
+24/03/22 18:39:04.26 [:0000000e] accept client socket_id: 4 addr:183.192.22.57:1186
+24/03/22 18:39:04.26 [:00000010] ws connect from: 4
+24/03/22 18:39:04.26 [:00000010] ws handshake from: 4 url / addr: 183.192.22.57:1186
+24/03/22 18:39:04.26 [:00000010] ----header-----
+24/03/22 18:39:04.26 [:00000010] upgrade websocket
+24/03/22 18:39:04.26 [:00000010] connection Upgrade
+24/03/22 18:39:04.26 [:00000010] accept-encoding gzip, deflate
+24/03/22 18:39:04.26 [:00000010] host 1.15.32.181:8001
+24/03/22 18:39:04.26 [:00000010] origin http://1.15.32.181:9090
+24/03/22 18:39:04.26 [:00000010] sec-websocket-version 13
+24/03/22 18:39:04.26 [:00000010] accept-language zh-CN,zh;q=0.9
+24/03/22 18:39:04.26 [:00000010] sec-websocket-extensions permessage-deflate; client_max_window_bits
+24/03/22 18:39:04.26 [:00000010] sec-websocket-key zALxb2VrBlx9hItzCTto2g==
+24/03/22 18:39:04.26 [:00000010] cache-control no-cache
+24/03/22 18:39:04.26 [:00000010] user-agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36
+24/03/22 18:39:04.26 [:00000010] pragma no-cache
+24/03/22 18:39:04.26 [:00000010] --------------
+24/03/22 18:39:10.48 [:00000010] message: text {"_cmd":"login","userid":"1","password":"2"}
+24/03/22 18:39:10.48 [:0000000b] LoginReq: 1 2
+24/03/22 18:39:10.48 [:0000000d] getPlayerByUserId: 1
+24/03/22 18:39:10.48 [:0000000d] onReconnect agentAddr: 0
+24/03/22 18:39:10.48 [:0000000d] addPlayer: 1
+24/03/22 18:39:10.48 [:0000000d] gameservice.onEnter: 1 1
+24/03/22 18:39:10.48 [:0000000d] gameservice.sendData: 16 4 login table: 0x7f7e83614640
+24/03/22 18:39:10.48 [:00000010] send_data 4 login table: 0x7f7e83614780
+24/03/22 18:39:12.39 [:00000010] message: text {"_cmd":"sitdown"}
+24/03/22 18:39:12.39 [:0000000d] gameservice.resp.HandleSitDownReq
+24/03/22 18:39:12.39 [:00000023] s.resp.HandleSitDownReq
+24/03/22 18:39:12.39 [:00000023] tablelogic.resp.HandleSitDownReq table: 0x7f7e834ad840
+24/03/22 18:39:12.39 [:00000023] playernode:Initialize
+24/03/22 18:39:12.39 [:00000023] tablelogic.CallBackSitDownSuccess: table: 0x7f7e834ad840 5
+24/03/22 18:39:12.39 [:00000010] send_data 4 sitdown table: 0x7f7e834afb40
+24/03/22 18:39:13.07 [:00000010] message: text {"_cmd":"ready"}
+24/03/22 18:39:13.07 [:00000010] message: 1 4 35
+24/03/22 18:39:13.07 [:00000023] s.resp.HandleReadyReq
+24/03/22 18:39:13.07 [:00000023] tablelogic.HandleReadyReq: table: 0x7f7e834ad840 5
+24/03/22 18:39:13.07 [:00000023] tableframe:CallBackReadSuccess
+24/03/22 18:39:13.07 [:00000010] send_data 4 ready table: 0x7f7e8363c040
+24/03/22 18:39:13.07 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:39:13.07 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:39:13.07 [:00000010] send_data 4 GameStart nil
+24/03/22 18:40:03.07 [:00000023] tablelogic:GameEnd
+24/03/22 18:40:03.07 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:40:03.07 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:40:03.07 [:00000010] send_data 4 GameEnd nil
+24/03/22 18:46:51.08 [:00000010] ws close from: 4 nil nil
+24/03/22 18:46:51.08 [:00000010] onClose fd: 4
+24/03/22 18:46:51.08 [:0000000d] disconnect: 16 16 1
+24/03/22 18:46:51.08 [:00000023] Disconnect: userdata: 0x7f7e8d614f90
+24/03/22 18:46:51.08 [:00000023] tablelogic:Disconnect userdata: 0x7f7e8d614f90
+24/03/22 18:46:51.08 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 5
+24/03/22 18:46:51.08 [:00000023] tablelogic:PlayerLeave: 1
+24/03/22 18:46:51.08 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 5
+24/03/22 18:46:51.08 [:00000023] playernode:Reset
+24/03/22 18:46:51.08 [:0000000d] getPlayerByUserId: 1
+24/03/22 18:46:51.08 [:0000000d] removePlayer: 1 0 0
+24/03/22 18:46:51.08 [:0000000d] gameservice.resp.subplayer1: 1
+24/03/22 18:46:51.08 [:0000000d] gameservice.resp.subplayer2: 1
+24/03/22 18:46:55.00 [:0000000e] accept client socket_id: 5 addr:183.192.22.57:1093
+24/03/22 18:46:55.00 [:00000011] ws connect from: 5
+24/03/22 18:46:55.01 [:00000011] ws handshake from: 5 url / addr: 183.192.22.57:1093
+24/03/22 18:46:55.01 [:00000011] ----header-----
+24/03/22 18:46:55.01 [:00000011] upgrade websocket
+24/03/22 18:46:55.01 [:00000011] connection Upgrade
+24/03/22 18:46:55.01 [:00000011] accept-encoding gzip, deflate
+24/03/22 18:46:55.01 [:00000011] host 1.15.32.181:8001
+24/03/22 18:46:55.01 [:00000011] origin http://1.15.32.181:9090
+24/03/22 18:46:55.01 [:00000011] sec-websocket-version 13
+24/03/22 18:46:55.01 [:00000011] accept-language zh-CN,zh;q=0.9
+24/03/22 18:46:55.01 [:00000011] sec-websocket-extensions permessage-deflate; client_max_window_bits
+24/03/22 18:46:55.01 [:00000011] sec-websocket-key wVScbzT6c2oKzppdPsrk1Q==
+24/03/22 18:46:55.01 [:00000011] cache-control no-cache
+24/03/22 18:46:55.01 [:00000011] user-agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36
+24/03/22 18:46:55.01 [:00000011] pragma no-cache
+24/03/22 18:46:55.01 [:00000011] --------------
+24/03/22 18:47:02.40 [:00000011] message: text {"_cmd":"login","userid":"1","password":"2"}
+24/03/22 18:47:02.40 [:0000000b] LoginReq: 1 2
+24/03/22 18:47:02.40 [:0000000d] getPlayerByUserId: 1
+24/03/22 18:47:02.40 [:0000000d] onReconnect agentAddr: 0
+24/03/22 18:47:02.40 [:0000000d] addPlayer: 1
+24/03/22 18:47:02.40 [:0000000d] gameservice.onEnter: 1 1
+24/03/22 18:47:02.40 [:0000000d] gameservice.sendData: 17 5 login table: 0x7f7e83ff3680
+24/03/22 18:47:02.40 [:00000011] send_data 5 login table: 0x7f7e83ff37c0
+24/03/22 18:47:04.15 [:00000011] message: text {"_cmd":"sitdown"}
+24/03/22 18:47:04.15 [:0000000d] gameservice.resp.HandleSitDownReq
+24/03/22 18:47:04.15 [:00000023] s.resp.HandleSitDownReq
+24/03/22 18:47:04.15 [:00000023] tablelogic.resp.HandleSitDownReq table: 0x7f7e834ad840
+24/03/22 18:47:04.15 [:00000023] playernode:Initialize
+24/03/22 18:47:04.15 [:00000023] tablelogic.CallBackSitDownSuccess: table: 0x7f7e834ad840 5
+24/03/22 18:47:04.15 [:00000011] send_data 5 sitdown table: 0x7f7e83a14d00
+24/03/22 18:47:04.98 [:00000011] message: text {"_cmd":"ready"}
+24/03/22 18:47:04.98 [:00000011] message: 1 5 35
+24/03/22 18:47:04.98 [:00000023] s.resp.HandleReadyReq
+24/03/22 18:47:04.98 [:00000023] tablelogic.HandleReadyReq: table: 0x7f7e834ad840 5
+24/03/22 18:47:04.98 [:00000023] tableframe:CallBackReadSuccess
+24/03/22 18:47:04.98 [:00000011] send_data 5 ready table: 0x7f7e8320c180
+24/03/22 18:47:04.98 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:47:04.98 [:0000000d] gameservice.resp.tableBusy: 1 true
+24/03/22 18:47:04.98 [:00000011] send_data 5 GameStart nil
+24/03/22 18:47:09.20 [:00000011] ws close from: 5 nil nil
+24/03/22 18:47:09.20 [:00000011] onClose fd: 5
+24/03/22 18:47:09.20 [:0000000d] disconnect: 17 17 1
+24/03/22 18:47:09.20 [:00000023] Disconnect: userdata: 0x7f7e8d614f90
+24/03/22 18:47:09.20 [:00000023] tablelogic:Disconnect userdata: 0x7f7e8d614f90
+24/03/22 18:47:09.20 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 7
+24/03/22 18:47:54.98 [:00000023] tablelogic:GameEnd
+24/03/22 18:47:54.98 [:00000023] tablelogic:PlayerLeave: 1
+24/03/22 18:47:54.98 [:00000023] tablelogic.CallBackDisconnect: table: 0x7f7e834ad840 5
+24/03/22 18:47:54.98 [:00000023] playernode:Reset
+24/03/22 18:47:54.98 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:47:54.98 [:0000000d] gameservice.resp.tableBusy: 1 false
+24/03/22 18:47:54.98 [:0000000d] getPlayerByUserId: 1
+24/03/22 18:47:54.98 [:0000000d] removePlayer: 1 0 0
+24/03/22 18:47:54.98 [:0000000d] gameservice.resp.subplayer1: 1
+24/03/22 18:47:54.98 [:0000000d] gameservice.resp.subplayer2: 1
+24/03/22 20:14:25.73 [:0000000e] accept client socket_id: 6 addr:83.97.20.34:19919
+24/03/22 20:14:25.73 [:00000012] ws connect from: 6
+24/03/22 20:14:25.73 [:00000012] ws close from: 6 nil nil
+24/03/22 21:34:47.11 [:0000000e] accept client socket_id: 7 addr:111.7.96.148:12006
+24/03/22 21:34:47.11 [:00000013] ws connect from: 7
+24/03/22 21:34:48.86 [:00000013] socket: error on 7 Connection reset by peer
+24/03/22 21:34:48.86 [:00000013] ws error from: 7
+24/03/22 21:34:58.89 [:0000000e] accept client socket_id: 8 addr:111.7.96.148:20844
+24/03/22 21:34:58.89 [:00000014] ws connect from: 8
+24/03/22 21:34:58.89 [:00000014] ws close from: 8 nil nil
+24/03/22 21:35:01.45 [:0000000e] accept client socket_id: 9 addr:111.7.100.18:63744
+24/03/22 21:35:01.45 [:00000015] ws connect from: 9
+24/03/22 21:35:01.45 [:00000015] ws close from: 9 nil nil
+24/03/22 21:35:01.51 [:0000000e] accept client socket_id: 10 addr:111.7.100.19:11725
+24/03/22 21:35:01.51 [:00000016] ws connect from: 10
+24/03/22 21:35:01.51 [:00000016] ws close from: 10 nil nil
