@@ -10,7 +10,7 @@ function Json_pack(cmd, msg)
 	local namelen = string.len(cmd)
 	local bodylen = string.len(body)
 	local len = namelen + bodylen + 2
-	print("json_pack:", cmd, msg, len)
+	skynet.error("json_pack:", cmd, msg, len)
 	local format = string.format("> i2 i2 c%d c%d", namelen, bodylen)
 	local buff = string.pack(format, len, namelen, cmd, body)
 	return buff
@@ -26,9 +26,9 @@ function Json_unpack(rawbuff, sz)
 	local cmd, bodybuff = string.unpack(format, other)
 	local isok, msg = pcall(cjson.decode, bodybuff)
 
-	print(isok, msg, msg._cmd, cmd)
+	skynet.error(isok, msg, msg._cmd, cmd)
 	if not isok or not msg or not msg._cmd or not cmd == msg._cmd then
-		print("error json_unpack")
+		skynet.error("error json_unpack")
 		return
 	end
 
@@ -44,12 +44,12 @@ function Json_unspack(buff)
 	local cmd, bodybuff = string.unpack(format, other)
 	local isok, msg = pcall(cjson.decode, bodybuff)
 
-	print(isok, msg, msg._cmd, cmd)
+	skynet.error(isok, msg, msg._cmd, cmd)
 	if not isok or not msg or not msg._cmd or not cmd == msg._cmd then
-		print("error json_unspack")
+		skynet.error("error json_unspack")
 		return
 	else
-		print("Json_unspack", cmd, msg)
+		skynet.error("Json_unspack", cmd, msg)
 	end
 
 	return cmd, msg

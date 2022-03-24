@@ -1,11 +1,12 @@
 local factotoryPlayerNode = class("factotoryPlayerNode")
 
+local skynet = require "skynet"
 local playerstable = require "playerstable"
 -- 玩家节点数据 c++ stable数据
 factotoryPlayerNode.playernode = nil
 
 function factotoryPlayerNode:ctor()
-    print("factotoryPlayerNode:ctor")
+    skynet.error("factotoryPlayerNode:ctor")
 end
 
 -- 坐下的时候会调用

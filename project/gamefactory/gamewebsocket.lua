@@ -12,7 +12,7 @@ function CMD.start(conf)
     local id = socket.listen("0.0.0.0", conf.port)
     skynet.error(string.format("Listen websocket port 0.0.0.0:%d protocol:%s", conf.port, protocol))
     socket.start(id, function(id, addr)
-        print(string.format("accept client socket_id: %s addr:%s", id, addr))
+        skynet.error(string.format("accept client socket_id: %s addr:%s", id, addr))
         skynet.send(agent[balance], "lua", "socket", id, protocol, addr)
         balance = balance + 1
         if balance > #agent then

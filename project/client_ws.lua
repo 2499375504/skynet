@@ -23,16 +23,16 @@ skynet.start(function ()
     ws_id = websocket.connect(url)
 
     skynet.fork(function ()
-        print("ws_id:", ws_id)
+        skynet.error("ws_id:", ws_id)
         while true do
             if ws_id == 0 then
                 skynet.sleep(10)
             end
             send_package(ws_id, "login")
             local resp, close_reason = websocket.read(ws_id)
-            print("<: " .. (resp and resp or "[Close] " .. close_reason))
+            skynet.error("<: " .. (resp and resp or "[Close] " .. close_reason))
             if not resp then
-                print("echo server close.")
+                skynet.error("echo server close.")
                 break
             end
             websocket.ping(ws_id)
@@ -40,5 +40,5 @@ skynet.start(function ()
         end
     end)
 
-    print("end.....")
+    skynet.error("end.....")
 end)

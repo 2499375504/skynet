@@ -61,25 +61,25 @@ local function send_request(name, args)
 	session = session + 1
 	local str = json_pack(name, args)
 	send_package(fd, str)
-	print("Request:", session)
+	skynet.error("Request:", session)
 end
 
 local last = ""
 
 local function print_request(name, args)
-	print("REQUEST", name)
+	skynet.error("REQUEST", name)
 	if args then
 		for k,v in pairs(args) do
-			print(k,v)
+			skynet.error(k,v)
 		end
 	end
 end
 
 local function print_response(session, args)
-	print("RESPONSE", session)
+	skynet.error("RESPONSE", session)
 	if args then
 		for k,v in pairs(args) do
-			print(k,v)
+			skynet.error(k,v)
 		end
 	end
 end

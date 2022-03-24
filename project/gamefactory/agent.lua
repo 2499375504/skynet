@@ -17,7 +17,7 @@ local isAuthen = false
 local playerstable = nil
 
 local function send_package(clientfd, cmd, pack)
-	print("send_package", clientfd, cmd, pack)
+	skynet.error("send_package", clientfd, cmd, pack)
 	assert(clientfd == client_fd, string.format("error clientfd:%d,%d", clientfd, client_fd))
 	local package = Json_pack(cmd, pack)
 	socket.write(clientfd, package)
@@ -57,7 +57,7 @@ function REQUEST.sitdown(args)
 	assert(playerstable.agentAddr == skynet.self() and playerstable.tableAddr == 0)
 	if playerstable.gamestatus ~= STATUS.GAME_STATUS.WAIT_DESK then
 		-- TODO 状态不对
-		print("set error", playerstable.gamestatus)
+		skynet.error("set error", playerstable.gamestatus)
 		return
 	end
 

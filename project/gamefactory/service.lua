@@ -68,12 +68,12 @@ function M.sendcl(node, srv, ...)
 end
 
 function M.start(name, id, ...)
-    print("name:", name, ...)
+    skynet.error("name:", name, ...)
     M.name = name
     M.id = tonumber(id)
     local args = {...}
     if #args > 0 then
-        print("name:", name, ", args:", args[0])
+        skynet.error("name:", name, ", args:", args[0])
     end
     skynet.start(function() 
         init(table.unpack(args))

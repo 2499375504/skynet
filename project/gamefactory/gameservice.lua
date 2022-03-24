@@ -22,7 +22,7 @@ end
 
 -- 玩家坐下
 function gameservice.resp.HandleSitDownReq(addr, playernode)
-    print("gameservice.resp.HandleSitDownReq")
+    skynet.error("gameservice.resp.HandleSitDownReq")
     local find = false
     -- 查找合适的桌子
     for k, v in pairs(tableList) do
@@ -82,7 +82,7 @@ end
 
 -- 玩家断线
 function gameservice.resp.disconnect(addr, playernode)
-    print("disconnect:", addr, playernode.agentAddr, playernode.userid)
+    skynet.error("disconnect:", addr, playernode.agentAddr, playernode.userid)
     -- 如果已经被替换成新的agent了 不需要释放了
     if addr ~= playernode.agentAddr then
         return
@@ -106,20 +106,20 @@ end
 
 -- 桌子不让进了
 function gameservice.resp.tableBusy(addr, id, busy)
-    print("gameservice.resp.tableBusy:", id, busy)
+    skynet.error("gameservice.resp.tableBusy:", id, busy)
     if tableList[id] then
         tableList[id].busy = busy
-        print("gameservice.resp.tableBusy:", id, busy)
+        skynet.error("gameservice.resp.tableBusy:", id, busy)
     else
         -- TODO 错误提示
     end
 end
 
 function gameservice.resp.subplayer(addr, id)
-    print("gameservice.resp.subplayer1:", id)
+    skynet.error("gameservice.resp.subplayer1:", id)
     if tableList[id] then
         tableList[id]:subplayer()
-        print("gameservice.resp.subplayer2:", id)
+        skynet.error("gameservice.resp.subplayer2:", id)
     else
         -- TODO 错误提示
     end
@@ -129,7 +129,7 @@ end
 function gameservice.sendData(playernode, cmd, pack)
     if playernode.agentAddr > 0 then
         local agentAddr = playernode.agentAddr
-        print("gameservice.sendData:", agentAddr, playernode.client_fd, cmd, pack)
+        skynet.error("gameservice.sendData:", agentAddr, playernode.client_fd, cmd, pack)
         gameservice.send(agentAddr, "send_data", playernode.client_fd, cmd, pack)
     end
 end
@@ -138,7 +138,7 @@ end
 function gameservice.onEnter(userinfo)
     local playerstable = playerstableMgr:getFreePlayer()
     playerstableMgr:addPlayer(playerstable, userinfo)
-    print("gameservice.onEnter:", userinfo.userid, playerstable.userid)
+    skynet.error("gameservice.onEnter:", userinfo.userid, playerstable.userid)
     playerstable.gamestatus = STATUS.GAME_STATUS.WAIT_DESK
     -- 发送登陆成功提示
     local msg = clone(FMSG.LoginRes)
@@ -166,7 +166,7 @@ end
 
 -- 断线重入
 function gameservice.onReconnect(playernode, userinfo)
-    print("onReconnect agentAddr:", playernode.agentAddr)
+    skynet.error("onReconnect agentAddr:", playernode.agentAddr)
     local agentAddr = playernode.agentAddr
     local client_fd = playernode.client_fd
     playernode.agentAddr = userinfo.agentAddr
@@ -180,7 +180,7 @@ function gameservice.onReconnect(playernode, userinfo)
     if playernode.tableAddr <= 0 then
         gameservice.onEnter(userinfo)
     else
-        print("onReconnect tableAddr:", playernode.tableAddr)
+        skynet.error("onReconnect tableAddr:", playernode.tableAddr)
         gameservice.send(playernode.tableAddr, "onReconnect", playernode)
     end
 
@@ -191,7 +191,7 @@ end
 function gameservice.createTable(cfg)
     local t = clone(tableinfo)
     t:init(cfg)
-    print("createTable:", t.cfg)
+    skynet.error("createTable:", t.cfg)
     t.tableservice = skynet.newservice("tableservice", "tableservice", 1)
     gameservice.send(t.tableservice, "init", t.cfg)
     return t

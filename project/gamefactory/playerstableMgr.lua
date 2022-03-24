@@ -1,5 +1,6 @@
 local playerstableMgr = {}
 
+local skynet = require "skynet"
 local playerstable = require("playerstable")
 
 playerstableMgr.playerlist = {}
@@ -23,7 +24,7 @@ function playerstableMgr:addPlayer(playernode, userinfo)
     playerstable.Initialize(playernode)
     playerstable.SetUserInfo(playernode,userinfo);
     self.playerlist[playernode.userid] = playernode
-    print("addPlayer:", playernode.userid)
+    skynet.error("addPlayer:", playernode.userid)
 end
 
 -- 减少一个
@@ -41,7 +42,7 @@ end
 -- 得到一个用户
 function playerstableMgr:getPlayerByUserId(userid)
     for index, value in pairs(self.playerlist) do
-        print("getPlayerByUserId:", index)
+        skynet.error("getPlayerByUserId:", index)
     end
 
     return self.playerlist[userid]

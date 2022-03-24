@@ -6,16 +6,19 @@ local FMSG = require "factorymessage"
 local usernode = require "playernode"
     
 function tablelogic:ctor()
-    print("tablelogic.ctor")
+    skynet.error("tablelogic.ctor")
     -- 前面需要声明不然继承失败
     self.tableAgent = nil
     self.tableCfg = nil
     self.playerNode = {}
+    self.isLocked = false
     self.tablestatus = STATUS.TABLE_STATUS.WAIT_START
+    self.timer = false
+    self:StartTimer()
 end
 
 function tablelogic:initCfg(agent, cfg)
-    print("tablelogic initLogic:", self)
+    skynet.error("tablelogic initLogic:", self)
     self.tableAgent = agent
     self.tableCfg = cfg
     for i = 1, self.tableCfg.playernum, 1 do
@@ -86,8 +89,13 @@ end
 
 -- 坐下
 function tablelogic:HandleSitDownReq(playerstable)
-    print("tablelogic.resp.HandleSitDownReq", self)
-    -- 错误处理 这个时候能不能入桌 游戏已经开始了...
+    skynet.error("tablelogic.resp.HandleSitDownReq", self)
+    -- 错误处理 基类逻辑层的锁住桌子
+    if self.isLocked then
+        return false
+    end
+
+    -- 游戏已经开始并且不能旁观了...
     if self.tablestatus == STATUS.TABLE_STATUS.WAIT_END then
         if not self.tableCfg.allowlookon then
             return false
@@ -138,7 +146,7 @@ end
 
 -- 准备
 function tablelogic:HandleReadyReq(playerstable)
-    print("tablelogic.HandleReadyReq:", self, playerstable.gamestatus)
+    skynet.error("tablelogic.HandleReadyReq:", self, playerstable.gamestatus)
 
     if playerstable.gamestatus ~= STATUS.GAME_STATUS.WAIT_READY then
         return
@@ -186,7 +194,7 @@ function tablelogic:onReconnect(playerstable)
 end
 
 function tablelogic:Disconnect(playerstable)
-    print("tablelogic:Disconnect", playerstable)
+    skynet.error("tablelogic:Disconnect", playerstable)
     self:CallBackDisconnect(self:getPlayerByChairId(playerstable.chairid))
     -- 游戏中掉线
     if playerstable.gamestatus == STATUS.GAME_STATUS.WAIT_END then
@@ -202,7 +210,7 @@ end
 
 function tablelogic:PlayerLeave(playernode)
     -- 检测是否有没有计费的和日志写入
-    print("tablelogic:PlayerLeave:", playernode.playernode.userid)
+    skynet.error("tablelogic:PlayerLeave:", playernode.playernode.userid)
     self:CallBackPlayerLeave(playernode)
     local msg = clone(FMSG.TablePlayerLeave)
     msg.userid = playernode.playernode.userid
@@ -213,6 +221,12 @@ function tablelogic:PlayerLeave(playernode)
     self.tableAgent.send(".gameservice", "subplayer", self.tableCfg.id)
     playernode:clear()
 
+end
+
+-- 锁住桌子
+function tablelogic:LockTable(bool)
+    self.isLocked = bool
+    self.tableAgent.send(".gameservice", "tableBusy", self.tableCfg.id, bool)
 end
 
 -- 基类调用
@@ -229,7 +243,7 @@ end
 
 function tablelogic:GameEnd()
     self.tablestatus = STATUS.TABLE_STATUS.WAIT_START
-    print("tablelogic:GameEnd")
+    skynet.error("tablelogic:GameEnd")
     -- TODO 计费 日志
 
     -- 状态改变
@@ -244,17 +258,37 @@ function tablelogic:GameEnd()
     end
 end
 
+function tablelogic:StartTimer()
+    if self.timer == false then
+        self.timer = true
+        skynet.fork(function ()
+            while true do
+                skynet.sleep(100)
+                self:onTimer()
+            end
+        end)
+    end
+end
+
+function tablelogic:StopTimer()
+    self.timer = false
+end
+
 ------------------------------------------------------------------------------------
+function tablelogic:onTimer()
+    
+end
+
 function tablelogic:CallBackSitDownSuccess(playernode)
-    print("tablelogic.CallBackSitDownSuccess:", self, playernode.playernode.gamestatus)
+    skynet.error("tablelogic.CallBackSitDownSuccess:", self, playernode.playernode.gamestatus)
 end
 
 function tablelogic:CallBackReadySuccess(playernode)
-    print("tablelogic.CallBackReadySuccess:", self, playernode.playernode.gamestatus)
+    skynet.error("tablelogic.CallBackReadySuccess:", self, playernode.playernode.gamestatus)
 end
 
 function tablelogic:CallBackDisconnect(playernode)
-    print("tablelogic.CallBackDisconnect:", self, playernode.playernode.gamestatus)
+    skynet.error("tablelogic.CallBackDisconnect:", self, playernode.playernode.gamestatus)
 end
 
 function tablelogic:CallBackReconnect(playernode)
@@ -262,7 +296,7 @@ function tablelogic:CallBackReconnect(playernode)
 end
 
 function tablelogic:CallBackPlayerLeave(playernode)
-    print("tablelogic.CallBackDisconnect:", self, playernode.playernode.gamestatus)
+    skynet.error("tablelogic.CallBackDisconnect:", self, playernode.playernode.gamestatus)
 end
 
 return tablelogic

@@ -69,7 +69,7 @@ function REQUEST.sitdown(client_fd, args)
 	assert(playerstable.agentAddr == skynet.self() and playerstable.tableAddr == 0)
 	if playerstable.gamestatus ~= STATUS.GAME_STATUS.WAIT_DESK then
 		-- TODO 状态不对
-		print("set error", playerstable.gamestatus)
+		skynet.error("set error", playerstable.gamestatus)
 		return
 	end
 
@@ -91,7 +91,7 @@ end
 local handle = {}
 
 function handle.connect(id)
-    print("ws connect from: " .. tostring(id))
+    skynet.error("ws connect from: " .. tostring(id))
     client_fds[id] = {
         isAuthen = false,
         playerstable = nil
@@ -100,24 +100,24 @@ end
 
 function handle.handshake(id, header, url)
     local addr = websocket.addrinfo(id)
-    print("ws handshake from: " .. tostring(id), "url", url, "addr:", addr)
-    print("----header-----")
+    skynet.error("ws handshake from: " .. tostring(id), "url", url, "addr:", addr)
+    skynet.error("----header-----")
     for k,v in pairs(header) do
-        print(k,v)
+        skynet.error(k,v)
     end
-    print("--------------")
+    skynet.error("--------------")
     -- send_package(id, FMSG.HANDSHAKE, "123", false)
 end
 
 function handle.message(id, msg, msg_type)
     assert(msg_type == "binary" or msg_type == "text")
-    print("message:", msg_type, msg)
+    skynet.error("message:", msg_type, msg)
 
     assertfd(id)
     local cmd, args = decode_package(msg)
 
     if nil == cmd then
-        print("cmd not found")
+        skynet.error("cmd not found")
         return
     end
 
@@ -126,7 +126,7 @@ function handle.message(id, msg, msg_type)
     -- 还没有认证
 	if not isAuthen and cmd ~= FMSG.LOGIN and cmd ~= FMSG.HANDSHAKE then
 		-- 非法消息
-		print(isAuthen, cmd)
+		skynet.error(isAuthen, cmd)
 		s.closeSocket(id)
 		return
 	end
@@ -139,7 +139,7 @@ function handle.message(id, msg, msg_type)
 		-- 这个时候应该在房间里面了
 		assert(playerstable ~= nil and playerstable.agentAddr > 0 )
 		assert(playerstable.agentAddr == skynet.self() and playerstable.tableAddr > 0)
-		print("message:", playerstable.userid, id, playerstable.tableAddr)
+		skynet.error("message:", playerstable.userid, id, playerstable.tableAddr)
 		if cmd == FMSG.READY then
 			REQUEST.ready(playerstable, args)
 		else
@@ -150,11 +150,11 @@ function handle.message(id, msg, msg_type)
 end
 
 function handle.ping(id)
-    print("ws ping from: " .. tostring(id) .. "\n")
+    skynet.error("ws ping from: " .. tostring(id) .. "\n")
 end
 
 function handle.pong(id)
-    print("ws pong from: " .. tostring(id))
+    skynet.error("ws pong from: " .. tostring(id))
 end
 
 local function onClose(fd)
@@ -162,7 +162,7 @@ local function onClose(fd)
     if client_fds[fd].playerstable then
 		if client_fds[fd].isAuthen then
 			client_fds[fd].isAuthen = false
-			print("onClose fd:", fd)
+			skynet.error("onClose fd:", fd)
 			s.send(".gameservice", "disconnect", client_fds[fd].playerstable)
 			client_fds[fd] = nil
 		end
@@ -170,18 +170,18 @@ local function onClose(fd)
 end
 
 function handle.close(id, code, reason)
-    print("ws close from: " .. tostring(id), code, reason)
+    skynet.error("ws close from: " .. tostring(id), code, reason)
     onClose(id)
 end
 
 function handle.error(id)
-    print("ws error from: " .. tostring(id))
+    skynet.error("ws error from: " .. tostring(id))
     onClose(id)
 end
 
 -- 转发到客户端
 function s.resp.send_data(address, client_fd, cmd, pack)
-    print("send_data", client_fd, cmd, pack)
+    skynet.error("send_data", client_fd, cmd, pack)
     send_package(client_fd, cmd, pack)
 end
 
@@ -192,7 +192,7 @@ end
 function s.resp.socket(address, id, protocol, addr)
 	local ok, err = websocket.accept(id, handle, protocol, addr)
 	if not ok then
-		print(err)
+		skynet.error(err)
 	end
 end
 
