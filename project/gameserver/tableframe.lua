@@ -19,6 +19,7 @@ end
 
 function tableframe:OnGameStart()
     self:GameStart()
+    self:sendAllData("GameStart")
     -- 这个按照各个游戏的逻辑来
     self.tableAgent.send(".gameservice", "tableBusy", self.tableCfg.id, true)
     skynet.sleep(5000)
